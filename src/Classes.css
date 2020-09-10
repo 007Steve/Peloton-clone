@@ -1,0 +1,9 @@
+.classes__container{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #E4E7EB;
+    height: 100%;
+    flex-wrap: wrap ;
+    flex: 1;
+}

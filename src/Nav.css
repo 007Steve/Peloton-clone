@@ -1,0 +1,51 @@
+.nav__container{
+    background-color: #F5F7F9;
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px ;
+    align-items: center;
+    position:sticky;
+    z-index: 100;
+}
+
+.nav__image{
+    object-fit: contain;
+    width: 40px;
+    border-radius: 100%;
+}
+.nav__logo{
+    margin-left: 10px;
+}
+
+.nav__options{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.nav__options-texts{
+    align-items: center;
+    display: flex;
+    background-color: #F5F7F9;
+}
+
+.nav__profile{
+    align-items: center;
+}
+
+#nav__profilePic{
+    margin-right: 10px;
+}
+
+.nav__option-text{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #5a6474;
+}
+
+span{
+    align-items: center;
+}

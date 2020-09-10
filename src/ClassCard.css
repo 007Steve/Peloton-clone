@@ -1,0 +1,22 @@
+.classCard__container{
+    margin-left: 20px;
+    margin-bottom: 15px;
+    height: 170px;
+    width: 370px;
+    border-radius: 10px;
+    background-color: black;
+    flex-wrap: wrap;
+}
+.classCard__card{
+    margin-left: 15px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+
+#title__text{
+    color: white;
+    font-weight: 200;
+    font-size: 26px;
+}
+
