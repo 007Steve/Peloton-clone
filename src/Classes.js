@@ -1,10 +1,14 @@
 import React from 'react'
 import ClassCard  from './ClassCard'
 import './Classes.css'
+import { Link} from 'react-router-dom'
 function Classes() {
     return (
         <div className="classes">
+            <Link to="/workout">
             <ClassCard title="Strength"/>
+            </Link>
+           
             <ClassCard title="Yoga"/>
             <ClassCard title="Meditation"/>
             <ClassCard title="Cardio"/>

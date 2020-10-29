@@ -1,0 +1,27 @@
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    transition:  200ms ease-in;
+
+}
+.icon:hover{
+    background-color:#e0e1e4;
+    border-radius: 3px;
+  
+}
+
+#icon__image{
+    height: 40px;
+    margin: 0 ;
+    padding: 0;
+
+}
+
+#icon__text{
+    color: slategray;
+}

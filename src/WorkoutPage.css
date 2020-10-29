@@ -1,0 +1,23 @@
+.workoutpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+
+}
+
+
+.workoutpage__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    
+}
+
+.workoutpage__videos{
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    margin: 0 auto;
+}
+

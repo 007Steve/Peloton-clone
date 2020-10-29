@@ -6,7 +6,7 @@ import './Home.css'
 function Home() {
     return (
         <div className="">
-            <Nav/>
+          
             <Row/>
             <Classes/>
         </div>
