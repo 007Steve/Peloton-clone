@@ -3,7 +3,9 @@ import Nav from './Nav'
 import Row from './row'
 import Classes from './Classes'
 import './Home.css'
+
 function Home() {
+  console.log(process.env)
     return (
         <div className="">
           <Nav/>

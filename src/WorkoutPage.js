@@ -5,26 +5,30 @@ import Nav from "./Nav.js";
 import VideoCard from "./VideoCard";
 import { useParams } from "react-router-dom";
 import ClassData from "./classData.js";
+import TuneIcon from '@material-ui/icons/Tune';
+
+
 function WorkoutPage() {
   const { id } = useParams();
   const classDataInfo = ClassData.find((data) => data.id === id);
-const query = "workouts"
+  const query = "workouts"
   const [videos, setVideos] = useState([]);
-  const apiKey = "AIzaSyDtJjWW6ktLwEq2yr5bEtWz5WaVTwcDHmQ";
-  const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&key=${apiKey}&type=video&q=${classDataInfo.title}${query}&maxResults=10`;
+  const apiKey = "AIzaSyAhin5a3EkwI_CxIPOHwM2ArnMh4b7LogU";
+  const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&key=${apiKey}&type=video&q=${classDataInfo.title}${query}&maxResults=12`;
+ 
   useEffect(() => {
     async function fetchVideos() {
-      const response = await fetch(url);
-      const data = await response.json();
-      setVideos(data.items);
+      fetch(url)
+      .then( response => response.json())
+      .then(dataVideo => setVideos(dataVideo.items))
+      ;
     }
     fetchVideos();
-  }, []);
+  }, [url]);
   
   return (
     <div className="workoutpage">
       <Nav />
-      <hr></hr>
       <div className="workoutpage__icons">
         <Icon
           className="active"
@@ -60,17 +64,21 @@ const query = "workouts"
           image="https://www.flaticon.com/svg/static/icons/svg/808/808507.svg"
         />
       </div>
-
       <div className="workoutpage__videos">
-          
-        <h1>{classDataInfo.title}</h1>
-        {videos.map(video => (
-     <VideoCard video={video.id.videoId} key={video.id.videoid}  id={video.Id}/>
-    
-        ))}
-   
-    
-      </div>
+        <div className="workoutpage__info">
+            <p>{classDataInfo.title}</p>
+            <div  className="workoutpage__icon">
+                <TuneIcon/>
+                <p>Filter</p>
+            </div>
+        </div>
+            
+            <div className="workoutpage__videosContainer">
+          {videos.map(video => (
+            <VideoCard video={video.id.videoId} key={video.id.videoid}  id={video.Id}/>))
+            }
+            </div>
+        </div>
     </div>
   );
 }

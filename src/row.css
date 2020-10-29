@@ -5,10 +5,6 @@
     justify-content: center;
     align-items: center;
     text-align: right;
-
- 
-   
-    /* need t center  and work on css for cards*/
 }
 
 .row_workoutcard{
@@ -16,13 +12,14 @@
 }
 
 .row_options{
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
 
 }
 
 h5{
    text-align: left;
-padding: 5px;}
+    padding: 5px;
+}

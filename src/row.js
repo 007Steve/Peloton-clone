@@ -14,7 +14,6 @@ function row() {
             <WorkoutCard time="5:00 pm" title="30 min HIIT Ride" coach="Stephen Plummer" type="Bike" mins="23:34"/>
             <WorkoutCard time="5:00 pm" title="30 min HIIT Ride" coach="Stephen Plummer" type="Bike" mins="23:34"/>
         </div>
-        <hr/>
      </div>
     )
 }

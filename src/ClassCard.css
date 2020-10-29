@@ -5,7 +5,13 @@
     width: 370px;
     border-radius: 10px;
     background-color: black;
-    
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:cover;
 }
 .classCard__card{
     margin-left: 15px;
@@ -15,6 +21,6 @@
 
 #title__text{
     color: white;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 26px;
 }

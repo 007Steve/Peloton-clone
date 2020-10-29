@@ -3,7 +3,6 @@ import './Login.css'
 function LoginForm() {
     return (
         <div className="login_container">
-         
             <form className="form__container">
                 <h2>Login</h2>
                 <div>

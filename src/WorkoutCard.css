@@ -1,36 +1,37 @@
-.WorkoutCard__conatainer{
+.WorkoutCard__conatainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
     text-align: left;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    width: 80%;
+    height: 150px;
 }
 
 #time {
-    
     font-size: 12px;
     font-weight: 400;
     margin-left: 40px;
 }
 
-
-.WorkoutCard__title{
+.WorkoutCard__title {
     margin-left: 40px;
     font-size: 16px;
     font-weight: 500;
 }
-.WorkoutCard__info-coach{
+.WorkoutCard__info-coach {
     margin-top: 5px;
 }
-    
-.WorkoutCard__info{
+
+.WorkoutCard__info {
     margin-left: 40px;
     margin-right: 40px;
     font-size: 16px;
     font-weight: 300;
 }
 
-button{
+button {
     margin-right: 10px;
     background-color: white;
     width: 110px;
@@ -41,20 +42,24 @@ button{
     transition: color 200ms ease-in;
 }
 
-button:hover { 
-    background-position: right center; 
-    background-image: linear-gradient(to right, #D31027 0%, #EA384D 51%, #D31027 100%);
+button:hover {
+    background-position: right center;
+    background-image: linear-gradient(
+        to right,
+        #d31027 0%,
+        #ea384d 51%,
+        #d31027 100%
+    );
     color: white;
     outline: none;
     border: none;
-   
 }
 
-.WorkoutCard__info-tilStart{
+.WorkoutCard__info-tilStart {
     font-size: 9px;
 }
 
-.WorkoutCard__info-container{
+.WorkoutCard__info-container {
     display: flex;
     align-items: center;
     padding: 5px;
