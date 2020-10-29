@@ -1,9 +1,9 @@
-.classes__container{
-    display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    background-color: #E4E7EB;
-    height: 100%;
-    flex-wrap: wrap ;
-    flex: 1;
+.classes{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 400px 400px 400px;
+  
+    
+    
 }

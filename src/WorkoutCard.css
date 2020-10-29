@@ -1,56 +1,44 @@
 .WorkoutCard__conatainer{
-    display: flex;
-    flex: 1;
-    margin-left:10px ;
-    margin-right: 10px;
+    margin: 10px;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 80%;
 }
 
 #time {
-    text-align: left;
+    
     font-size: 12px;
     font-weight: 400;
     margin-left: 40px;
 }
 
-.WorkoutCard__card{
-    display: block;
-    width: 360px;
-    height: 160px;
-    background-color: white;
-    border-radius: 10px;
-    margin-left: 10px;
-}
 
 .WorkoutCard__title{
     margin-left: 40px;
-    margin-top: 15px;
-    width: 190px;
-    text-align: left;
-    justify-content: left;
     font-size: 16px;
     font-weight: 500;
 }
 .WorkoutCard__info-coach{
-        margin-top: 5px;
-    }
+    margin-top: 5px;
+}
     
-
 .WorkoutCard__info{
-    text-align: left;
     margin-left: 40px;
     margin-right: 40px;
     font-size: 16px;
     font-weight: 300;
 }
+
 button{
-    margin-top:14px;
     margin-right: 10px;
     background-color: white;
     width: 110px;
     height: 32px;
     border-radius: 50px;
     outline: none;
-    
+    cursor: pointer;
+    transition: color 200ms ease-in;
 }
 
 button:hover { 
@@ -59,18 +47,15 @@ button:hover {
     color: white;
     outline: none;
     border: none;
-}
-
-.WorkoutCard__info-mins{
-   display: inline;
+   
 }
 
 .WorkoutCard__info-tilStart{
-    display: inline;
     font-size: 9px;
-   
-    text-align: center;
-    position: relative;
-    right: 36px;
-    top: 12px;
+}
+
+.WorkoutCard__info-container{
+    display: flex;
+    align-items: center;
+    padding: 5px;
 }

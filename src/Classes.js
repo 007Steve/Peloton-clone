@@ -3,7 +3,7 @@ import ClassCard  from './ClassCard'
 import './Classes.css'
 function Classes() {
     return (
-        <div className="classes__container">
+        <div className="classes">
             <ClassCard title="Strength"/>
             <ClassCard title="Yoga"/>
             <ClassCard title="Meditation"/>

@@ -5,7 +5,7 @@
     height: 60px ;
     align-items: center;
     position:sticky;
-    z-index: 100;
+    top:0;
 }
 
 .nav__image{
@@ -38,12 +38,24 @@
 }
 
 .nav__option-text{
-    margin-left: 30px;
-    margin-right: 30px;
+    padding: 10px;
     font-size: 15px;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 8px;
     color: #5a6474;
+    cursor: pointer;
+    transition:  200ms ease-in;
+}
+
+.nav__option-text:hover{
+   background-color:#e0e1e4;
+    
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.active{
+    color: red;
 }
 
 span{

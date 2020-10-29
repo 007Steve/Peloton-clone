@@ -9,7 +9,7 @@ function Nav() {
 
             <div className="nav__options">
                 <div className="nav__options-texts">  
-                     <p className="nav__option-text">Classes</p>
+                     <p className="nav__option-text active">Classes</p>
                      <p className="nav__option-text">Schedule</p>
                      <p className="nav__option-text">Challenges</p>
                      <p className="nav__option-text">Profile</p>
