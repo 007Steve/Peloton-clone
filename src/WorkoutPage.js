@@ -13,7 +13,7 @@ function WorkoutPage() {
   const classDataInfo = ClassData.find((data) => data.id === id);
   const query = "workouts"
   const [videos, setVideos] = useState([]);
-  const apiKey = "AIzaSyAhin5a3EkwI_CxIPOHwM2ArnMh4b7LogU";
+  const apiKey = "AIzaSyDtJjWW6ktLwEq2yr5bEtWz5WaVTwcDHmQ";
   const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&key=${apiKey}&type=video&q=${classDataInfo.title}${query}&maxResults=12`;
  
   useEffect(() => {
@@ -74,8 +74,7 @@ function WorkoutPage() {
         </div>
             
             <div className="workoutpage__videosContainer">
-          {videos.map(video => (
-            <VideoCard video={video.id.videoId} key={video.id.videoid}  id={video.Id}/>))
+          {videos.map(video => ( <VideoCard video={video.id.videoId} key={video.id.videoid}  id={video.Id}/>))
             }
             </div>
         </div>

@@ -3,6 +3,7 @@ import './VideoCard.css'
 import ReactPlayer from "react-player";
 
 function VideoCard({video,id}) {
+
     return (
         <div className="videocard">
            <ReactPlayer

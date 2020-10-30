@@ -5,7 +5,11 @@
 }
 
 .App {
- 
   background-color: #E4E7EB;
-  height: 100vh;
 }
+
+@media only screen and (min-width: 1189px) {
+  .App {
+    height: 100vh;
+    }
+  }

@@ -1,6 +1,14 @@
-.classes{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 400px 400px 400px;
+.classes {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 400px 400px 400px;
+}
+@media only screen and (max-width: 1186px) {
+.classes {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   grid-template-columns: 300px 300px 300px;
+  }
 }

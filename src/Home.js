@@ -7,7 +7,7 @@ import './Home.css'
 function Home() {
   console.log(process.env)
     return (
-        <div className="">
+        <div className="home">
           <Nav/>
           <Row/>
           <Classes/>

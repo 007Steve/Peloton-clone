@@ -1,11 +1,10 @@
 .nav__container{
-    background-color: #F5F7F9;
+   
     display: flex;
     justify-content: space-evenly;
     height: 60px ;
     align-items: center;
-    position:sticky;
-    top:0;
+    background-color: white;
     
 }
 
@@ -22,12 +21,13 @@
     display: flex;
     justify-content: space-evenly;
     flex: 1;
+    
 }
 
 .nav__options-texts{
     align-items: center;
     display: flex;
-    background-color: #F5F7F9;
+    
 }
 
 .nav__profile{
@@ -35,7 +35,7 @@
 }
 
 #nav__profilePic{
-    margin-right: 10px;
+    margin-right: 16px;
 }
 
 .nav__option-text{
@@ -61,3 +61,16 @@
 span{
     align-items: center;
 }
+
+
+    @media only screen and (max-width: 606px) {
+        .nav__options-texts {
+         
+          }
+        }
+
+        @media only screen and (max-width: 455px) {
+            .nav__options-texts {
+               display: none;
+              }
+            }

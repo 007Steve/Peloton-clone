@@ -11,7 +11,7 @@ function ClassCard({title,id,backgroundImage}) {
       
     return (
         <div className="classCard__container" style={divStyle}>
-            <Link to={`/workout/${id}`}>
+            <Link to={`/workout/${id}`} style={{ textDecoration: 'none' }}>
                 <div className="classCard__card">
                     <img id="image" src="" alt=""/>
                     <h2 id="title__text">{title}</h2>
