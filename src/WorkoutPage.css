@@ -1,60 +1,97 @@
-.workoutpage{
+.workoutpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.workoutpage__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(165, 165, 165);
+  background-color: rgb(247, 247, 247);
+  overflow-x: scroll;
+}
+
+.workoutpage__icons::-webkit-scrollbar {
+  display: none;
+}
+.workoutpage__videos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 600;
+  color: rgb(165, 165, 165);
+}
+
+.workoutpage__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
+  padding: 10px;
+}
+
+.workoutpage__info > p {
+  display: flex;
+  align-items: center;
+  margin-left: 280px;
+}
+
+.workoutpage__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e7eb;
+  width: 120px;
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid gray;
+  transition: 200ms ease-in;
+}
+
+.workoutpage__icon:hover {
+  background-color: rgb(119, 119, 119);
+  color: white;
+}
+
+.workoutpage__videosContainer {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 380px 380px 200px;
+  margin: 0 auto;
+}
+
+iframe {
+  border-radius: 10px;
+  margin-left: 20px;
+  margin: 10px;
+  height: 170px;
+  width: 370px;
+}
+
+@media only screen and (max-width: 1352px) {
+  .workoutpage__videosContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-
-.workoutpage__icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid rgb(165, 165, 165);
-    background-color: rgb(247, 247, 247);
-}
-
-.workoutpage__videos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-weight: 600;
-    color: rgb(165, 165, 165);
-}
-
-.workoutpage__info{
+    grid-template-columns: 380px 380px 200px;
+  }
+  .workoutpage__info {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 80%;
-    padding:10px ;
+  }
+  .workoutpage__icon {
+    display: none;
+  }
 }
-
-.workoutpage__info > p{
+@media only screen and (max-width: 1186px) {
+  .workoutpage__videosContainer {
     display: flex;
-    align-items: center;
-    margin-left: 280px;
-}
-
-.workoutpage__icon{
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    background-color: #E4E7EB;
-    width: 120px;
-    padding: 5px;
-    border-radius: 20px;
-    cursor: pointer;
-    border: 1px solid gray;
-    transition:  200ms ease-in;
-}
-
-.workoutpage__icon:hover{
-    background-color: rgb(119, 119, 119);
-    color: white;
-}
-
-.workoutpage__videosContainer{
-    display: grid;
-    grid-template-columns: 360px 360px 360px;
-    margin: 0 auto;
+    grid-template-columns: 300px 300px 300px;
+  }
 }

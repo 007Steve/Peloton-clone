@@ -21,6 +21,7 @@
 .classCard__card{
     margin-left: 15px;
     text-align: left;
+    cursor: pointer;
 }
 
 
