@@ -57,10 +57,13 @@
 }
 
 .workoutpage__videosContainer {
-  display: grid;
+  /* display: grid;
   grid-gap: 0.5rem;
-  grid-template-columns: 380px 380px 200px;
-  margin: 0 auto;
+  grid-template-columns: 460px 460px 300px;
+  place-items: center; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 iframe {
@@ -72,12 +75,12 @@ iframe {
 }
 
 @media only screen and (max-width: 1352px) {
-  .workoutpage__videosContainer {
+  /* .workoutpage__videosContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     grid-template-columns: 380px 380px 200px;
-  }
+  } */
   .workoutpage__info {
     display: flex;
     align-items: center;
@@ -87,11 +90,11 @@ iframe {
     display: none;
   }
 }
-@media only screen and (max-width: 1186px) {
+/* @media only screen and (min-width: 1186px) {
   .workoutpage__videosContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     grid-template-columns: 300px 300px 300px;
   }
-}
+} */
